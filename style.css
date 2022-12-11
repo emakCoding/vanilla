@@ -1,0 +1,52 @@
+.container {
+  /* height: 120px; */
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.judul {
+  background-color: blueviolet;
+  margin: 20px;
+  display: flex;
+}
+
+h1 {
+  padding: 5px;
+  margin: 5px;
+}
+
+.suit {
+  margin: auto;
+  width: 60%;
+  height: 400px;
+  flex-direction: row;
+  background-color: rgb(136, 116, 205);
+  border: 1px solid gold;
+  display: flex;
+}
+
+.pilihan {
+  background-color: aliceblue;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+li span {
+  font-size: 250%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.content {
+  flex-grow: 5;
+  background-color: azure;
+}
