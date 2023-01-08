@@ -1,45 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* awal header */
 .container {
-  /* height: 120px; */
-  background-color: bisque;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px 0 30px;
 }
 
-img {
-  width: 15%;
+.img-ct {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  overflow: hidden;
+  background: url("img/foto2.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .judul {
-  background-color: blueviolet;
-  margin: 20px;
   display: flex;
+  font-size: 30px;
+  height: 100px;
+  color: red;
+  /* background-color: aqua; */
+}
+.satu {
+  align-self: flex-start;
 }
 
-h1 {
-  padding: 5px;
-  margin: 5px;
+.dua {
+  align-self: flex-end;
 }
 
+h1 .judul {
+  padding: 0px;
+  /* margin: 5px; */
+}
+
+/* content */
 .suit {
   margin: auto;
   width: 60%;
   height: 400px;
   flex-direction: row;
-  background-color: rgb(136, 116, 205);
-  border: 1px solid gold;
+  /* background-color: rgb(136, 116, 205); */
+  border: 1px solid grey;
   display: flex;
 }
 
 .pilihan {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-li span {
+li button {
   font-size: 250%;
+  margin: 20px 0 20px 0;
 }
 
 ul {
@@ -49,4 +73,48 @@ ul {
 .content {
   flex-grow: 5;
   background-color: azure;
+}
+
+.hasil {
+  flex-grow: 1;
+  height: 40%;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.tampilan {
+  display: flex;
+  flex-grow: 1;
+  /* background-color: beige; */
+  height: 60%;
+  justify-content: space-evenly;
+}
+
+.tampilan {
+  height: 20%;
+  margin-top: 20px;
+}
+p {
+  font-size: 70px;
+}
+
+#user {
+  width: 80px;
+  height: 80px;
+  border: solid 4px;
+  font-size: 350%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#computer {
+  width: 80px;
+  height: 80px;
+  border: solid 4px;
+  font-size: 350%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
