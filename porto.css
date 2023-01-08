@@ -5,36 +5,45 @@
   box-sizing: border-box;
 }
 .container {
-  display: flex;
-  width: 100%;
+  /* display: flex;
+  width: ;
   height: 100vh;
   background-color: #f8f9fa;
-  justify-content: space-between;
+  justify-content: space-between; */
+
+  max-width: 100vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  /* padding: 0px 40px; */
+  position: relative;
+  clear: both;
+  font-family: "Cabin", sans-serif;
 }
 header {
-  width: 25%;
+  width: 20%;
   height: 100vh;
   background-color: #d3d3d3;
   padding: 0 0 0 25px;
-  border-right: solid 1px rgba(223, 86, 70, 0.5);
+  border-right: solid 2px rgba(223, 86, 70, 0.5);
   position: fixed;
-  /* background-color: rgba(223, 86, 70, 0.05); */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* judul */
 .nama {
   display: flex;
-  font-size: 25px;
-  height: 13vh;
+  font-size: 3vh;
+  height: 11vh;
   color: black;
+  font-family: "Pacifico", cursive;
 }
 
-/* .ummu {
-  align-self: flex-start;
+.ummu {
+  align-self: flex-end;
 }
 .fasa {
   align-self: flex-end;
-} */
+}
 
 /* list */
 .menu {
@@ -47,7 +56,7 @@ header {
 }
 ul {
   list-style-type: none;
-  font-size: 25px;
+  font-size: 2.5vh;
 }
 li {
   margin: 25px auto;
@@ -55,12 +64,26 @@ li {
 a {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+a::before {
+  content: "";
+  width: 60px;
   transition: 2s all;
 }
-li:hover a {
-  margin-left: 75px;
+a:hover::before {
+  padding-left: 40px;
   color: rgba(223, 86, 70, 0.5);
+  border-bottom: solid 3px rgba(223, 86, 70, 0.5);
 }
+
+/* a:active {
+  content: "";
+  width: 60px;
+  padding-left: 40px;
+  color: rgba(223, 86, 70, 0.5);
+  border-bottom: solid 3px rgba(223, 86, 70, 0.5);
+} */
 
 /* foot */
 .email {
@@ -70,43 +93,42 @@ li:hover a {
 
 /* main */
 main {
-  width: 75%;
+  width: 80%;
   height: 100vh;
-  position: absolute;
-  /* float: right; */
-  left: 370px;
+  position: relative;
+  left: 20%;
   display: flex;
-  background-color: black;
+  /* background-color: black; */
 }
 /* introduction */
-.isi {
+.pic {
   background-image: url("img/foto3.jpg");
   width: 100%;
-  height: 722px;
+  height: 100vh;
   background-size: cover;
-  /* filter: sepia(40%); */
+  /* filter: sepia(10%); */
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.6;
+  background-position: right;
 }
-.tulisan {
+.cover {
   width: 50%;
   background-color: #f8f9fa;
-  height: 600px;
+  height: 70vh;
   position: relative;
   float: left;
-  margin: 60px 30px 0 50px;
+  margin: 15vh 30px 15vh 50px;
   line-height: 1.5;
   word-spacing: 3px;
   padding: 40px;
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   border-radius: 80px 0 80px 0;
 }
-.tentang {
+.tulisan {
   align-items: center;
 }
-span {
+#smile {
   font-size: 30px;
 }
 
@@ -114,25 +136,21 @@ span {
 .lebih {
   position: relative;
   width: 100%;
-  height: 500px;
-  top: 50px;
-  padding: 20px;
-  margin: 0 auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px rgba(223, 86, 70, 0.5);
+  background-color: blanchedalmond;
 }
 .nama2 {
   font-size: 25px;
   height: 13vh;
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .tulisan2 {
   display: flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   word-spacing: 3px;
   padding: 20px;
@@ -149,34 +167,142 @@ span {
 /* certificate */
 .certi {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  position: inherit;
-  border: solid red 2px;
+  background-color: #2b2d42;
+  overflow: hidden;
 }
 .card {
-  width: 200px;
-  height: 300px;
-  background-color: rgba(223, 86, 70, 0.5);
-  border-radius: 20%;
-  border: solid 5px #495057;
+  position: relative;
+  width: 350px;
+  height: 270px;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(-360deg);
+  }
+}
+
+.card a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+}
+
+.card a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+
+.card a:hover img {
+  transform: translateY(-50px) scale(1.2);
 }
 
 /* project */
 .project {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: inherit;
-  border: solid red 2px;
+  background-color: rgb(79, 78, 78);
 }
 
 .emot {
-  font-size: 400px;
+  font-size: 300px;
 }
 
 /* contact */
+.hear {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: inherit;
+  background-color: azure;
+}
+.contact {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.medsos {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* responsive breakpoint */
+/* tablet */
+/* @media screen and (max-width: 1100px) {
+  header {
+    width: 25%;
+  }
+  .nama {
+    font-size: 2.5vh;
+  }
+  main {
+    width: 75%;
+    left: 25vw;
+  }
+  .email {
+    font-size: 0.8em;
+  }
+  .tulisan {
+    width: 80%;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    display: none;
+  }
+  main {
+    width: 100%;
+    left: 0;
+  }
+  .tulisan {
+    width: 80%;
+    font-size: 13px;
+  }
+  .lebih {
+    height: 100vh;
+  }
+  .nama2 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .tulisan2 {
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .b {
+    border-right: none;
+    border-bottom: solid 2px rgba(223, 86, 70, 0.5);
+  }
+} */

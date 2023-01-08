@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="porto.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
     <title>PORTOFOLIO</title>
   </head>
   <body>
@@ -12,17 +20,17 @@
       <!-- header start -->
       <header>
         <div class="nama">
-          <h1 class="ummu">Ummu</h1>
-          <h1 class="fasa">Fasa</h1>
+          <h1 class="ummu">emak</h1>
+          <h1 class="fasa">Coding</h1>
         </div>
         <div class="menu">
           <div class="innermenu">
             <ul>
               <li><a href="#bio"> Home</a></li>
-              <li><a href=""> About</a></li>
-              <li><a href=""> Project</a></li>
-              <li><a href=""> Certificate</a></li>
-              <li><a href=""> Contact</a></li>
+              <li><a href="#about"> About</a></li>
+              <li><a href="#certificate"> Certificate</a></li>
+              <li><a href="#project"> Project</a></li>
+              <li><a href="#contact"> Contact</a></li>
             </ul>
           </div>
           <div class="email">
@@ -36,22 +44,22 @@
       <main>
         <div id="bio">
           <!-- introduction start -->
-          <div class="isi"></div>
-          <div class="tulisan">
-            <div class="tentang">
+          <div class="pic"></div>
+          <div class="cover">
+            <div class="tulisan">
               <h3>Halo, perkenalkan saya</h3>
               <h1>UMMU FASA 🧕</h1>
-              <br /><br />
+              <br />
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium explicabo quis repellat consectetur accusamus distinctio nam, velit impedit ullam exercitationem temporibus possimus recusandae labore libero nesciunt
                 aperiam aut minus similique, nobis blanditiis doloribus facilis nulla non! Incidunt accusantium suscipit doloremque eligendi nulla deleniti consectetur ut, illo nesciunt excepturi corrupti error voluptatem, adipisci a eius
-                tempora exercitationem! Pariatur nam corporis optio hic quo laudantium iusto amet architecto sunt quis, molestias vel odit corrupti. <span>😊</span>.
+                tempora exercitationem! Pariatur nam corporis optio hic quo laudantium iusto amet architecto sunt quis, molestias vel odit corrupti. <span id="smile">😊</span>.
               </p>
             </div>
           </div>
           <!-- introduction end -->
           <!-- weaknes $ strength start -->
-          <div class="lebih">
+          <div class="lebih" id="about">
             <div class="nama2">
               <h1>WEAKNES & STRENGTH</h1>
             </div>
@@ -73,9 +81,16 @@
           <!-- weaknes $ strength end -->
           <!-- certificate start -->
           <div class="certi" id="certificate">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+              <a href="https://codepolitan.com/c/IEXGC1C/" target="_blank" style="--i: 1"><img src="certi/PEMROGRAMAN.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/AF3E7TC/" target="_blank" style="--i: 2"><img src="certi/ALGORITMA.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/OAD6JWC/" target="_blank" style="--i: 3"><img src="certi/HTML.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/J8HIH7I/" target="_blank" style="--i: 4"><img src="certi/CSS.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/ATAEMR7/" target="_blank" style="--i: 5"><img src="certi/BOOTSTRAPCSS.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/C0EAVP4/" target="_blank" style="--i: 6"><img src="certi/GIT.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/G6PCGF5/" target="_blank" style="--i: 7"><img src="certi/JAVASCRIPT.jpg" alt="" /></a>
+              <a href="https://codepolitan.com/c/8PDLH0A/" target="_blank" style="--i: 8"><img src="certi/JQUERY.jpg" alt="" /></a>
+            </div>
           </div>
           <!-- certificate start -->
           <!-- project start -->
@@ -84,13 +99,22 @@
           </div>
           <!-- project start -->
           <!-- contact start -->
-          <div class="hear">
-            <div class="jud">
-              <h1>Jika kamu tertarik untuk menjadikan aku sebagai tim kepercayaanmu,</h1>
-              <h1>HUBUNGI aku di : <span>⏬</span></h1>
+          <div class="hear" id="contact">
+            <div class="medsos">
+              <div>😊</div>
+              <div>😍</div>
+              <div>😁</div>
+              <div>😒</div>
             </div>
             <div class="contact">
+              <div class="jud">
+                <h1>CONTACT ME :</h1>
+              </div>
               <label for="name">Full Name :</label>
+              <input type="text" />
+              <label for="email">Email :</label>
+              <input type="email" />
+              <label for="message">Message :</label>
               <input type="text" />
             </div>
           </div>
