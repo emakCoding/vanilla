@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #d3d3d3;
+}
 
 /* awal header */
 .container {
@@ -10,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 30px 0 30px;
+
+  /* background-color: #212121; */
 }
 
 .img-ct {
@@ -25,7 +30,8 @@
   display: flex;
   font-size: 30px;
   height: 100px;
-  color: red;
+  color: rgba(223, 86, 70, 0.8);
+  font-family: "Moon Dance", cursive;
   /* background-color: aqua; */
 }
 .satu {
@@ -44,12 +50,13 @@ h1 .judul {
 /* content */
 .suit {
   margin: auto;
-  width: 60%;
-  height: 400px;
+  width: 60vw;
+  height: 70vh;
   flex-direction: row;
   /* background-color: rgb(136, 116, 205); */
-  border: 1px solid grey;
+  border: 1px solid rgba(223, 86, 70, 0.8);
   display: flex;
+  background-color: #d3d3d3;
 }
 
 .pilihan {
@@ -64,6 +71,9 @@ h1 .judul {
 li button {
   font-size: 250%;
   margin: 20px 0 20px 0;
+  border: solid 4px rgba(223, 86, 70, 0.5);
+
+  background-color: #d3d3d3;
 }
 
 ul {
@@ -72,7 +82,7 @@ ul {
 
 .content {
   flex-grow: 5;
-  background-color: azure;
+  /* background-color: azure; */
 }
 
 .hasil {
@@ -103,7 +113,7 @@ p {
 #user {
   width: 80px;
   height: 80px;
-  border: solid 4px;
+  border: solid 4px rgba(223, 86, 70, 0.5);
   font-size: 350%;
   display: flex;
   justify-content: center;
@@ -112,7 +122,7 @@ p {
 #computer {
   width: 80px;
   height: 80px;
-  border: solid 4px;
+  border: solid 4px rgba(223, 86, 70, 0.5);
   font-size: 350%;
   display: flex;
   justify-content: center;

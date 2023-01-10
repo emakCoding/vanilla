@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: solid 1px red;
+  /* border: solid 1px red; */
   box-sizing: border-box;
 }
 .container {
@@ -133,15 +133,16 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   /* border-bottom: solid 2px rgba(223, 86, 70, 0.5); */
   background-color: #d3d3d3;
 }
 .nama2 {
-  font-size: 25px;
-  height: 13vh;
+  font-size: 3em;
+  height: 10vh;
   color: black;
+  font-family: "Moon Dance", cursive;
 }
 .tulisan2 {
   display: flex;
@@ -168,14 +169,21 @@ main {
   align-items: center;
   background-color: #d3d3d3;
   overflow: hidden;
+  font-family: "Moon Dance", cursive;
 }
 
 .certi2 {
-  font-size: 2rem;
+  font-size: 3rem;
   position: absolute;
   align-self: flex-start;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.certi2 h1 {
+}
+
 .card p {
   font-size: 15px;
   margin-top: 180px;
@@ -233,38 +241,45 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #d3d3d3;
+  background-color: #212121;
   flex-direction: column;
+  color: #f3f3f3;
 }
-
+.judullg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Moon Dance", cursive;
+}
 /* .emot {
   font-size: 300px;
 } */
 .project h1 {
-  font-size: 4em;
-  margin: 0;
+  font-size: 5em;
+  /* margin: 0; */
 }
 .project h3 {
   font-size: 3em;
-  margin: 0;
+  /* margin: 0; */
 }
 .skill {
-  color: black;
+  /* color: #f3f3f3; */
   width: 600px;
   height: 400px;
-  border: solid 3px #212121;
+  border: solid 3px #f3f3f3;
   border-radius: 20px;
-  box-shadow: #1b1919;
+  box-shadow: #edebeb;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #f0efef;
-  /* padding: 0 30px; */
+  background-color: #212121;
+  margin-top: -30px;
 }
 .skill svg {
   width: 20px;
   height: 20px;
   margin-left: 70px;
+  fill: #f3f3f3;
 }
 .skill li {
   font-size: 35px;
@@ -282,7 +297,6 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   background-color: #d3d3d3;
   flex-direction: column;
 }
@@ -291,10 +305,15 @@ main {
 }
 .contact {
   width: 70%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 10vh;
+}
+.jud {
+  align-self: center;
+  font-size: 3em;
+  font-family: "Moon Dance", cursive;
 }
 label {
   font-size: 25px;
@@ -312,12 +331,7 @@ label {
 #message {
   height: 150px;
 }
-/* .medsos {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-} */
+
 .hear textarea {
   width: 90%;
   height: 300px;
