@@ -5,44 +5,32 @@
   box-sizing: border-box;
 }
 .container {
-  /* display: flex;
-  width: ;
-  height: 100vh;
-  background-color: #f8f9fa;
-  justify-content: space-between; */
-
   max-width: 100vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  /* padding: 0px 40px; */
+
   position: relative;
   clear: both;
-  font-family: "Cabin", sans-serif;
+  /* font-family: 'Moon Dance', cursive; */
+  font-family: "Quicksand", sans-serif;
 }
 header {
   width: 20%;
   height: 100vh;
   background-color: #d3d3d3;
   padding: 0 0 0 25px;
-  border-right: solid 2px rgba(223, 86, 70, 0.5);
   position: fixed;
 }
 /* judul */
 .nama {
   display: flex;
-  font-size: 3vh;
+  font-size: 3.5vh;
   height: 11vh;
-  color: black;
-  font-family: "Pacifico", cursive;
-}
-
-.ummu {
-  align-self: flex-end;
-}
-.fasa {
-  align-self: flex-end;
+  color: rgba(223, 86, 70, 0.8);
+  margin-top: 30px;
+  font-family: "Moon Dance", cursive;
 }
 
 /* list */
@@ -56,7 +44,7 @@ header {
 }
 ul {
   list-style-type: none;
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 li {
   margin: 25px auto;
@@ -71,24 +59,29 @@ a::before {
   width: 60px;
   transition: 2s all;
 }
-a:hover::before {
+.innermenu a:hover::before {
   padding-left: 40px;
   color: rgba(223, 86, 70, 0.5);
   border-bottom: solid 3px rgba(223, 86, 70, 0.5);
 }
-
-/* a:active {
-  content: "";
-  width: 60px;
-  padding-left: 40px;
-  color: rgba(223, 86, 70, 0.5);
-  border-bottom: solid 3px rgba(223, 86, 70, 0.5);
-} */
+.innermenu a:hover {
+  color: rgba(223, 86, 70, 0.8);
+}
 
 /* foot */
 .email {
   border-top: solid 1px rgba(223, 86, 70, 0.5);
   padding: 20px 0 0 0;
+  font-size: 15px;
+}
+
+.email a svg {
+  width: 50px;
+  height: 50px;
+}
+
+.email a:hover svg {
+  opacity: 0.5;
 }
 
 /* main */
@@ -106,28 +99,29 @@ main {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  /* filter: sepia(10%); */
+  filter: sepia(40%);
   position: absolute;
   opacity: 0.6;
   background-position: right;
 }
 .cover {
   width: 50%;
-  background-color: #f8f9fa;
+  background-color: #707171;
   height: 70vh;
   position: relative;
   float: left;
-  margin: 15vh 30px 15vh 50px;
+  margin: 20vh 30px 20vh 50px;
   line-height: 1.5;
   word-spacing: 3px;
   padding: 40px;
-  font-size: 15px;
+  font-size: 1.2rem;
   display: flex;
   border-radius: 80px 0 80px 0;
-}
-.tulisan {
+  color: #f3f3f3;
   align-items: center;
+  justify-content: center;
 }
+
 #smile {
   font-size: 30px;
 }
@@ -141,8 +135,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: solid 2px rgba(223, 86, 70, 0.5);
-  background-color: blanchedalmond;
+  /* border-bottom: solid 2px rgba(223, 86, 70, 0.5); */
+  background-color: #d3d3d3;
 }
 .nama2 {
   font-size: 25px;
@@ -153,8 +147,8 @@ main {
   display: flex;
   line-height: 1.5;
   word-spacing: 3px;
-  padding: 20px;
-  font-size: 15px;
+  padding: 10px;
+  font-size: 25px;
   text-align: center;
 }
 .b {
@@ -165,21 +159,36 @@ main {
 }
 
 /* certificate */
+
 .certi {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2b2d42;
+  background-color: #d3d3d3;
   overflow: hidden;
 }
+
+.certi2 {
+  font-size: 2rem;
+  position: absolute;
+  align-self: flex-start;
+  margin-top: 30px;
+}
+.card p {
+  font-size: 15px;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .card {
+  margin-top: 100px;
   position: relative;
-  width: 350px;
-  height: 270px;
+  width: 250px;
+  height: 180px;
   transform-style: preserve-3d;
-  animation: rotate 30s linear infinite;
+  animation: rotate 40s linear infinite;
 }
 
 @keyframes rotate {
@@ -213,8 +222,8 @@ main {
   transition: 2s;
 }
 
-.card a:hover img {
-  transform: translateY(-50px) scale(1.2);
+.card:hover {
+  animation-play-state: paused;
 }
 
 /* project */
@@ -224,7 +233,7 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: inherit;
+
   background-color: rgb(79, 78, 78);
 }
 
@@ -239,20 +248,70 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: inherit;
-  background-color: azure;
+
+  background-color: #d3d3d3;
+  flex-direction: column;
+}
+.hear * {
+  padding: 10px;
 }
 .contact {
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+label {
+  font-size: 25px;
+  padding: 20px 0;
+}
+.hear input {
+  height: 50px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: #212121;
+  color: #f3f3f3;
+  font-size: 20px;
+  padding: 0 30px;
+}
+#message {
+  height: 150px;
+}
+/* .medsos {
   width: 50%;
   height: auto;
   display: flex;
+  flex-direction: column;
+} */
+.hear textarea {
+  width: 90%;
+  height: 300px;
+  padding: 12px 30px;
+  box-sizing: border-box;
+  /* border: 2px solid #ccc; */
+  border-radius: 20px;
+  background-color: #212121;
+  resize: none;
+  color: #f3f3f3;
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+  overflow: auto;
+}
+
+.hear footer {
+  background-color: rgb(18, 18, 18);
+  width: 100%;
+  height: 14vh;
+  color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-.medsos {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+.hear p {
+  margin: 0;
+  padding: 0;
 }
 
 /* responsive breakpoint */
