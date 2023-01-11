@@ -38,6 +38,9 @@ gunting.addEventListener("click", function () {
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
   setTimeout(() => alert(`Kamu ${hasil}`));
+  if (hasil == "MENANG!") {
+    document.location.href = "porto.html";
+  }
 });
 
 kertas.addEventListener("click", function () {
@@ -48,6 +51,9 @@ kertas.addEventListener("click", function () {
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
   setTimeout(() => alert(`Kamu ${hasil}`));
+  if (hasil == "MENANG!") {
+    document.location.href = "porto.html";
+  }
 });
 
 batu.addEventListener("click", function () {
@@ -58,6 +64,7 @@ batu.addEventListener("click", function () {
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
   setTimeout(() => alert(`Kamu ${hasil}`));
+  if (hasil == "MENANG!") {
+    document.location.href = "porto.html";
+  }
 });
-
-// menangkap hasil
