@@ -37,10 +37,7 @@ gunting.addEventListener("click", function () {
   computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-
-  console.log(pilihanUser);
-  console.log(pilihanComputer);
-  console.log("hasil = " + hasil);
+  setTimeout(() => alert(`Kamu ${hasil}`));
 });
 
 kertas.addEventListener("click", function () {
@@ -50,10 +47,7 @@ kertas.addEventListener("click", function () {
   computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-
-  console.log(pilihanUser);
-  console.log(pilihanComputer);
-  console.log("hasil = " + hasil);
+  setTimeout(() => alert(`Kamu ${hasil}`));
 });
 
 batu.addEventListener("click", function () {
@@ -63,10 +57,7 @@ batu.addEventListener("click", function () {
   computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-
-  console.log(pilihanUser);
-  console.log(pilihanComputer);
-  console.log(alert(`Kamu ${hasil}`));
+  setTimeout(() => alert(`Kamu ${hasil}`));
 });
 
 // menangkap hasil
