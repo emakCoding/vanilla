@@ -338,7 +338,6 @@ label {
   width: 90%;
   height: 250px;
   padding: 15px 30px;
-  box-sizing: border-box;
   border-radius: 20px;
   background-color: rgba(223, 86, 70, 0.8);
   resize: none;
