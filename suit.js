@@ -6,8 +6,6 @@ const kolomUser = document.querySelector("#user");
 
 [gunting, batu, kertas].forEach(function (elm) {
   elm.addEventListener("click", function () {
-    // console.log(kolomUser);
-    // console.log(this);
     kolomUser.innerHTML = this.innerHTML;
   });
 });
@@ -68,6 +66,7 @@ batu.addEventListener("click", function () {
 
   console.log(pilihanUser);
   console.log(pilihanComputer);
-  console.log("hasil = " + hasil);
+  console.log(alert(`Kamu ${hasil}`));
 });
 
+// menangkap hasil
