@@ -122,3 +122,23 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: 30px;
+    align-self: center;
+  }
+  #user {
+    width: 70px;
+    height: 70px;
+    font-size: 200%;
+  }
+  #computer {
+    width: 70px;
+    height: 70px;
+    font-size: 200%;
+  }
+  .hasil h1 {
+    font-size: 40px;
+  }
+}
