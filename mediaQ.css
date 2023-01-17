@@ -36,6 +36,9 @@
   .pic {
     width: 100%;
   }
+  .tombol {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -88,7 +91,10 @@
     width: 400px;
   }
   .skill li {
-    font-size: 28px;
+    font-size: 25px;
+  }
+  .skill li p {
+    font-size: 13;
   }
   .jud {
     font-size: 1.5em;
