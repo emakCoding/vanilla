@@ -142,3 +142,23 @@ p {
     font-size: 40px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .img-ct {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: url("img/foto2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .judul {
+    font-size: 20px;
+    height: 75px;
+  }
+  .suit {
+    margin-top: 30px;
+    width: 80vw;
+  }
+}
