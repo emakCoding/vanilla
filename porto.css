@@ -17,6 +17,7 @@ header.active {
   position: fixed;
   z-index: 50;
   padding-top: 30px;
+  opacity: 0.7;
 }
 
 .tombol {
