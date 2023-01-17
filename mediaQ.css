@@ -1,0 +1,103 @@
+/* responsive breakpoint */
+/* tablet */
+
+@media screen and (max-width: 1200px) {
+  .cover {
+    width: 80%;
+    float: none;
+    margin: 15vh 10vw 15vh 10vw;
+  }
+  .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    max-width: 100%;
+  }
+  .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
+
+  header {
+    position: absolute;
+    left: -100%;
+  }
+  main {
+    width: 100%;
+    left: 0;
+  }
+  .pic {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cover {
+    font-size: 1rem;
+    margin: 10vh 5vw 10vh 10vw;
+    width: 80vw;
+    height: 80vh;
+  }
+  .nama2 {
+    font-size: 1.5em;
+    height: 3vw;
+  }
+  .lebih {
+    padding: 5px;
+    justify-content: space-around;
+  }
+  .tulisan2 {
+    flex-direction: column;
+    font-size: 15px;
+    padding: 5px;
+    width: 80%;
+    height: 80%;
+  }
+  .b {
+    border-right: none;
+  }
+  .tulisan2 p {
+    margin: 20px;
+  }
+  .project h1 {
+    font-size: 4em;
+  }
+  .project h3 {
+    font-size: 2em;
+  }
+  .skill {
+    width: 70%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skill ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .skill ul div {
+    width: 400px;
+  }
+  .skill li {
+    font-size: 28px;
+  }
+  .jud {
+    font-size: 1.5em;
+  }
+  label {
+    font-size: 2.5vh;
+  }
+  .submit {
+    font-size: 3vh;
+    border-radius: 50%;
+  }
+}
