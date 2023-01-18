@@ -100,6 +100,7 @@
   .skill ul {
     display: flex;
     flex-direction: column;
+    margin-top: 3%;
   }
   .skill ul div {
     width: 400px;
