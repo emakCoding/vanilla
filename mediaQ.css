@@ -1,5 +1,57 @@
 /* responsive breakpoint */
 /* tablet */
+@media screen and (min-width: 1920px) {
+  .tulisan {
+    font-size: 175%;
+  }
+  #smile {
+    font-size: 40px;
+  }
+  .nama2 {
+    font-size: 250%;
+  }
+  .tulisan2 {
+    font-size: 200%;
+  }
+  .certi2 {
+    font-size: 250%;
+  }
+  .card p {
+    width: 300px;
+    font-size: 20px;
+    margin-top: 230px;
+  }
+  .card {
+    width: 300px;
+    height: 230px;
+  }
+  .card a {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
+  }
+
+  .skill {
+    width: 800px;
+    height: 500px;
+  }
+
+  .skill svg {
+    width: 30px;
+    height: 30px;
+  }
+  .skill li {
+    font-size: 40px;
+  }
+  .skill p {
+    font-size: 25px;
+    margin-left: 110px;
+  }
+  footer {
+    height: 10vh;
+  }
+  .submit {
+    font-size: 200%;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .tulisan {
@@ -47,7 +99,7 @@
     display: flex;
   }
   .submit {
-    font-size: 3vh;
+    font-size: 100%;
     border-radius: 50px;
   }
 }
@@ -120,6 +172,7 @@
   .submit {
     width: 30%;
     border-radius: 20px;
+    font-size: 100%;
   }
 }
 
@@ -130,6 +183,25 @@
   .container {
     max-width: 100%;
   }
+  .nama {
+    font-size: 3vh;
+    height: 8vh;
+    margin-top: 3vh;
+  }
+  ul {
+    font-size: 2.5vh;
+  }
+  li {
+    margin: 2vh;
+  }
+  .email {
+    font-size: 2vh;
+  }
+  .email a svg {
+    width: 5vh;
+    height: 5vh;
+  }
+
   main {
     width: 100%;
   }
@@ -189,6 +261,7 @@
   .submit {
     width: 30%;
     border-radius: 20px;
+    font-size: 100%;
   }
   .card p {
     display: inline-block;

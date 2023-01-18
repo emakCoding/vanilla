@@ -1,4 +1,6 @@
 // user
+console.log(alert("Pilih gunting, kertas atau batu."));
+
 const gunting = document.querySelector("#gunting");
 const batu = document.querySelector("#batu");
 const kertas = document.querySelector("#kertas");
