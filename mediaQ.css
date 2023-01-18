@@ -194,6 +194,17 @@
   li {
     margin: 2vh;
   }
+  a::before {
+    width: 3vh;
+  }
+  .innermenu a:hover::before {
+    padding-left: 3vh;
+  }
+
+  .innermenu a:active::before {
+    padding-left: 3vh;
+  }
+
   .email {
     font-size: 2vh;
   }
