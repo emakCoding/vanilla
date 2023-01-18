@@ -43,6 +43,7 @@ header.active {
   font-family: "Moon Dance", cursive;
   font-style: italic;
 }
+
 .tombol:hover {
   cursor: pointer;
 }
@@ -150,6 +151,8 @@ main {
 .cover {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: flex-start;
 }
 .tulisan {
   width: 50%;
@@ -162,11 +165,12 @@ main {
   word-spacing: px;
   padding: 40px;
   font-size: 1.1rem;
-  display: flex;
+  /* display: flex; */
+  /* flex-direction: column; */
   border-radius: 80px 0 80px 0;
   color: #f3f3f3;
-  align-items: center;
-  justify-content: center;
+  /* align-self: center; */
+  /* justify-content: center; */
 }
 
 #smile {
@@ -203,7 +207,7 @@ main {
   border-right: solid 2px rgba(223, 86, 70, 0.5);
 }
 .tulisan2 p {
-  margin: 10px;
+  margin: 5px;
 }
 
 /* certificate */
@@ -345,19 +349,17 @@ main {
 /* contact */
 .hear {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #e6e8e6;
   flex-direction: column;
 }
-.hear * {
-  padding: 8px;
-}
+
 .contact {
   width: 70%;
-  height: 84vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -369,7 +371,9 @@ main {
 }
 label {
   font-size: 3vh;
-  /* padding: 15px 0; */
+}
+.hear .contact form {
+  margin: 20px;
 }
 .hear input {
   height: 50px;
@@ -427,8 +431,10 @@ form {
   color: rgb(245, 245, 245);
   cursor: pointer;
 }
-
-.hear footer {
+.hear * {
+  padding: 3px;
+}
+footer {
   background-color: rgba(223, 86, 70, 0.8);
   width: 100%;
   height: 16vh;
@@ -438,7 +444,7 @@ form {
   align-items: center;
   flex-direction: column;
 }
-.hear p {
+footer p {
   margin: 0;
   padding: 0;
 }

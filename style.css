@@ -161,4 +161,7 @@ p {
     margin-top: 30px;
     width: 80vw;
   }
+  li button {
+    font-size: 200%;
+  }
 }

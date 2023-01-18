@@ -5,7 +5,7 @@
   .tulisan {
     width: 80%;
     float: none;
-    margin: 15vh 10vw 15vh 10vw;
+    margin: 15vh 5vw 15vh 5vw;
   }
   .pic {
     display: flex;
@@ -24,12 +24,13 @@
     align-items: center;
     float: none;
     flex-direction: column;
+    margin: 15vh 0;
   }
   .cover {
     display: flex;
     justify-content: center;
     align-items: center;
-    float: none;
+    /* /* float: none; */
   }
   header {
     position: absolute;
@@ -44,6 +45,10 @@
   }
   .tombol {
     display: flex;
+  }
+  .submit {
+    font-size: 3vh;
+    border-radius: 50%;
   }
 }
 
@@ -112,17 +117,26 @@
     font-size: 2.5vh;
   }
   .submit {
-    font-size: 3vh;
-    border-radius: 50%;
+    width: 30%;
+    border-radius: 20px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .container {
+  body {
     max-width: 100vw;
   }
+  .container {
+    max-width: 100%;
+  }
   main {
-    width: 100vw;
+    width: 100%;
+  }
+  .tombol {
+    position: absolute;
+  }
+  .skill ul div {
+    width: 300px;
   }
   .tulisan {
     display: flex;
@@ -149,5 +163,83 @@
   .tulisan2 {
     line-height: 1;
     word-spacing: 1px;
+  }
+  .certi2 {
+    font-size: 1rem;
+  }
+  .project h1 {
+    font-size: 2em;
+  }
+  .project h3 {
+    font-size: 1em;
+  }
+  .skill li {
+    font-size: 25px;
+  }
+  .skill p {
+    font-size: 15px;
+  }
+  .jud {
+    font-size: 1em;
+  }
+  label {
+    font-size: 2vh;
+  }
+  .submit {
+    width: 30%;
+    border-radius: 20px;
+  }
+  .card p {
+    display: inline-block;
+    width: 200px;
+    font-size: 15px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  .card {
+    margin-top: 80px;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: rotate 40s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(-360deg);
+    }
+  }
+
+  .card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+  }
+
+  .card a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+
+  .card:hover {
+    animation-play-state: paused;
+  }
+  .tombol {
+    position: fixed;
   }
 }
