@@ -289,7 +289,7 @@
     margin: 0;
   }
   .nama2 {
-    font-size: 1em;
+    font-size: 1.7em;
     height: 2vh;
   }
   .tulisan2 {
@@ -298,7 +298,7 @@
   }
 
   .certi2 {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
   .project h1 {
     font-size: 2em;
@@ -313,14 +313,14 @@
     font-size: 15px;
   }
   .judullg h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .judullg h3 {
     font-size: 1em;
   }
   .jud h1 {
     margin-top: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   label {
     font-size: 2vh;
