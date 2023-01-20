@@ -1,3 +1,5 @@
+// header aktive
+
 const header = document.querySelector(".header");
 document.querySelector(".tombol").onclick = () => {
   header.classList.toggle("active");
@@ -11,6 +13,7 @@ document.addEventListener("click", function (e) {
   }
 });
 
+// menu list aktive
 const listA = document.querySelectorAll(".innermenu a");
 
 const removeNavbar = () => {
@@ -38,6 +41,7 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
+// email
 function sendMail() {
   const pesan = {
     name: document.querySelector("#name").value,
