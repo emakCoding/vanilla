@@ -11,6 +11,33 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const listA = document.querySelectorAll(".innermenu a");
+
+const removeNavbar = () => {
+  listA.forEach((list) => {
+    list.classList.remove("navbar");
+  });
+};
+
+const addNavbar = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      let currentDot = document.querySelector(`.innermenu a[href='#${entry.target.id}']`);
+      removeNavbar();
+      currentDot.classList.add("navbar");
+    }
+  });
+};
+
+const options = {
+  threshold: 0.8,
+};
+const observer = new IntersectionObserver(addNavbar, options);
+const sections = document.querySelectorAll("section");
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
 function sendMail() {
   const pesan = {
     name: document.querySelector("#name").value,

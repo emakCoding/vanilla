@@ -93,7 +93,8 @@ a {
 a::before {
   content: "";
   width: 3vw;
-  transition: 2s all;
+  /* padding-left: 3vw; */
+  transition: 3s all;
 }
 .innermenu a:hover::before {
   padding-left: 3vw;
@@ -103,7 +104,7 @@ a::before {
 .innermenu a:hover {
   color: rgba(223, 86, 70, 0.8);
 }
-.active::before {
+.navbar::before {
   content: "";
   width: 3vw;
   padding-left: 3vw;
@@ -111,19 +112,15 @@ a::before {
   border-bottom: solid 3px rgba(223, 86, 70, 0.5);
 }
 
-/* .innermenu a:active::before {
-  padding-left: 3vw;
-  color: rgba(223, 86, 70, 0.5);
-  border-bottom: solid 3px rgba(223, 86, 70, 0.5);
+.navbar:hover {
+  transition: none;
 }
-.innermenu a:active {
-  background-color: rgba(223, 86, 70, 0.8);
-} */
 
 /* foot */
 .email {
   border-top: solid 1px rgba(223, 86, 70, 0.5);
   font-size: 0.7vw;
+  height: 8vh;
 }
 
 .email a svg {
@@ -427,7 +424,7 @@ form {
 .submit {
   width: 20%;
   height: 10%;
-  border-radius: 50px;
+  border-radius: 30px;
   border: none;
   background-color: rgba(223, 86, 70, 0.8);
   align-self: center;

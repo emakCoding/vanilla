@@ -61,9 +61,10 @@ h1 .judul {
 
 li button {
   font-size: 250%;
-  border: solid 4px #e6e8e6;
+  border: solid 2px #e6e8e6;
   border-radius: 10px;
   background-color: rgba(223, 86, 70, 0.3);
+  box-shadow: 0 10px 14px -3px rgba(0, 0, 0, 0.5);
 }
 
 ul {

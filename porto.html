@@ -27,10 +27,10 @@
         <div class="menu">
           <div class="innermenu">
             <ul>
-              <li><a href="#bio" class="active"> Home</a></li>
+              <li><a href="#bio"> Home</a></li>
               <li><a href="#about"> About Me</a></li>
               <li><a href="#certificate"> Certificate</a></li>
-              <li><a href="#skill"> Skill</a></li>
+              <li><a href="#skill" data-section="Skill"> Skill</a></li>
               <li><a href="#contact"> Contact</a></li>
             </ul>
           </div>
@@ -71,25 +71,27 @@
       <!-- header end -->
 
       <main>
-        <div id="bio">
+        <div>
           <!-- introduction start -->
           <!-- <div class="pic"></div> -->
-          <div class="cover">
-            <div class="pic"></div>
-            <div class="tulisan">
-              <h3>Halo, perkenalkan saya</h3>
-              <h1>TRI LESTARI🧕</h1>
-              <br />
-              <p>
-                Saya lulusan SMK Negeri 7 Medan jurusan Akuntansi. Pertama kali mengenal dunia pemrograman pada tahun 2021 melalui aplikasi MIMO. Hal ini membuat saya semakin tertarik untuk mempelajari lebih dalam melalui Youtube dan kursus
-                online. Walau sempat terhenti selama setahun karena suatu hal, akhirnya saya memutuskan untuk fokus dan meningkatkan kemampuan dalam dunia pemrograman. Komunitas juga sangat membantu dalam memberikan motivasi dan dukungan
-                dalam belajar tentang dunia pemrograman. <span id="smile">😊</span>.
-              </p>
+          <section id="bio">
+            <div class="cover">
+              <div class="pic"></div>
+              <div class="tulisan">
+                <h3>Halo, perkenalkan saya</h3>
+                <h1>TRI LESTARI🧕</h1>
+                <br />
+                <p>
+                  Saya lulusan SMK Negeri 7 Medan jurusan Akuntansi. Pertama kali mengenal dunia pemrograman pada tahun 2021 melalui aplikasi MIMO. Hal ini membuat saya semakin tertarik untuk mempelajari lebih dalam melalui Youtube dan
+                  kursus online. Walau sempat terhenti selama setahun karena suatu hal, akhirnya saya memutuskan untuk fokus dan meningkatkan kemampuan dalam dunia pemrograman. Komunitas juga sangat membantu dalam memberikan motivasi dan
+                  dukungan dalam belajar tentang dunia pemrograman. <span id="smile">😊</span>.
+                </p>
+              </div>
             </div>
-          </div>
+          </section>
           <!-- introduction end -->
           <!-- weaknes $ strength start -->
-          <div class="lebih" id="about">
+          <section class="lebih" id="about">
             <div class="nama2">
               <h1>Weakness & Strength</h1>
             </div>
@@ -107,10 +109,10 @@
                 </p>
               </div>
             </div>
-          </div>
+          </section>
           <!-- weaknes $ strength end -->
           <!-- certificate start -->
-          <div class="certi" id="certificate">
+          <section class="certi" id="certificate">
             <div class="certi2">
               <h1>Certificate</h1>
               <h3>Kursus yang saya ikuti</h3>
@@ -149,10 +151,10 @@
                 <p>JQUERY</p></a
               >
             </div>
-          </div>
+          </section>
           <!-- certificate end -->
           <!-- project start -->
-          <div class="skills" id="skill">
+          <section class="skills" id="skill">
             <div class="judullg">
               <h1>Skill</h1>
               <h3>Kemampuan yang saya miliki</h3>
@@ -236,10 +238,10 @@
                 </div>
               </ul>
             </div>
-          </div>
+          </section>
           <!-- project start -->
           <!-- contact start -->
-          <div class="hear" id="contact">
+          <section class="hear" id="contact">
             <div class="contact">
               <div class="jud">
                 <h1>Contact Me :</h1>
@@ -260,7 +262,7 @@
                 <button class="submit" onclick="sendMail()">Submit</button>
               </form>
             </div>
-          </div>
+          </section>
           <!-- contact start -->
           <footer>
             <p>Dibuat Oleh Tri Lestari 2023.</p>
@@ -275,6 +277,6 @@
         emailjs.init("TfgSrhS7rysIqTg0j");
       })();
     </script>
-    <script src="porto.js"></script>
+    <script defer src="porto.js"></script>
   </body>
 </html>

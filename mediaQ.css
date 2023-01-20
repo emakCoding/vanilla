@@ -81,16 +81,6 @@
   li {
     margin: 2vh;
   }
-  a::before {
-    width: 3vh;
-  }
-  .innermenu a:hover::before {
-    padding-left: 5vh;
-  }
-
-  .innermenu a:active::before {
-    padding-left: 5vh;
-  }
 
   .email {
     font-size: 1.2vh;
@@ -129,7 +119,13 @@
   }
   .submit {
     font-size: 100%;
-    border-radius: 50px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .submit {
+    border-radius: 20px;
   }
 }
 
@@ -155,13 +151,13 @@
     margin: 2vh;
   }
   a::before {
-    width: 3vh;
+    width: 5vh;
   }
   .innermenu a:hover::before {
     padding-left: 5vh;
   }
 
-  .innermenu a:active::before {
+  .navbar:before {
     padding-left: 5vh;
   }
 
@@ -218,7 +214,8 @@
   .skill li p {
     font-size: 13;
   }
-  .jud {
+  .jud h1 {
+    margin-top: 30px;
     font-size: 1.5em;
   }
   label {
@@ -249,16 +246,12 @@
   li {
     margin: 2vh;
   }
-  a::before {
-    width: 3vh;
+  /* a::before {
+    width: 4vh;
   }
   .innermenu a:hover::before {
-    padding-left: 3vh;
-  }
-
-  .innermenu a:active::before {
-    padding-left: 3vh;
-  }
+    padding-left: 4vh;
+  } */
 
   .email {
     font-size: 1vh;
@@ -288,7 +281,7 @@
     margin: 0;
   }
   .nama2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 0;
   }
   .pic {
@@ -319,7 +312,14 @@
   .skill p {
     font-size: 15px;
   }
-  .jud {
+  .judullg h1 {
+    font-size: 2em;
+  }
+  .judullg h3 {
+    font-size: 1em;
+  }
+  .jud h1 {
+    margin-top: 20px;
     font-size: 1em;
   }
   label {
