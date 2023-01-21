@@ -7,6 +7,7 @@
 /* test jangan lagi */
 body {
   background-color: #e6e8e6;
+  /* background-color: #010101; */
 }
 
 /* awal header */
@@ -49,7 +50,7 @@ h1 .judul {
 .suit {
   margin: auto;
   width: 60vw;
-  height: 70vh;
+  height: 70 auto;
   flex-direction: column;
   border: 4px solid #e6e8e6;
   display: flex;
@@ -57,6 +58,7 @@ h1 .judul {
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 20px 10px 14px -3px rgba(0, 0, 0, 0.5);
 }
 
 li button {
@@ -75,11 +77,12 @@ ul {
 .pilihan {
   width: 80%;
   height: auto;
-  margin-bottom: 10%;
+  margin: 50px;
 }
 .content {
   width: 80%;
   height: 70%;
+  margin: 50px;
 }
 
 .hasil {
