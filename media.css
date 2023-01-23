@@ -1,0 +1,122 @@
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (max-width: 1300px) {
+  .tulisan {
+    width: 80%;
+  }
+  .cover {
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    position: absolute;
+    left: -100%;
+  }
+
+  main {
+    width: 100vw;
+    left: 0;
+  }
+  .tombol {
+    display: flex;
+  }
+  .nama {
+    font-size: 1.3rem;
+    /* height: 8vh; */
+    margin-top: 30px;
+  }
+  ul {
+    font-size: 1.1rem;
+  }
+  li {
+    margin: 2vh 0;
+  }
+
+  .email {
+    font-size: 0.5rem;
+  }
+  .email a svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .tulisan2 {
+    flex-direction: column;
+    padding: 0 50px 50px;
+  }
+
+  .pembungkus-card {
+    padding: 150px;
+  }
+  .card {
+    width: 200px;
+    height: 140px;
+  }
+  .card a {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+  }
+  .card p {
+    margin-top: 140px;
+    width: 200px;
+  }
+  label {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .tulisan {
+    /* background-color: white; */
+    font-size: 0.9rem;
+  }
+  .tulisan2 {
+    padding: 0;
+  }
+  .tulisan2 p {
+    padding: 50px;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .nama2 {
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+  .certi2 {
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+  .judullg {
+    font-size: 1.5rem;
+    margin: 30px;
+  }
+  .jud {
+    font-size: 1.5rem;
+    margin: 30px;
+  }
+  .skill ul {
+    flex-direction: column;
+  }
+  .skill li {
+    font-size: 20px;
+  }
+  .skill p {
+    font-size: 13px;
+  }
+  .tema {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pembungkus-card {
+    padding: 0;
+  }
+  .skill ul {
+    margin: 2%;
+  }
+}

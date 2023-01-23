@@ -19,7 +19,7 @@
   .card p {
     width: 300px;
     font-size: 20px;
-    margin-top: 230px;
+    margin-top: 250px;
   }
   .card {
     width: 300px;
@@ -28,7 +28,9 @@
   .card a {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px);
   }
-
+  .tema {
+    width: 400px;
+  }
   .skill {
     width: 800px;
     height: 500px;
@@ -57,9 +59,9 @@
   .tulisan {
     width: 80%;
     float: none;
-    margin: 15vh 5vw 15vh 5vw;
+    /* margin: 15vh 5vw 15vh 5vw; */
   }
-  .pic {
+  .cover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +113,7 @@
     width: 100%;
     left: 0;
   }
-  .pic {
+  .cover {
     width: 100%;
   }
   .tombol {
@@ -284,9 +286,9 @@
     font-size: 2em;
     margin: 0;
   }
-  .pic {
-    width: 100vw;
-    margin: 0;
+  .cover {
+    /* width: 100vw;
+    margin: 0; */
   }
   .nama2 {
     font-size: 1.7em;
