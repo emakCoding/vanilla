@@ -74,32 +74,31 @@
     /* background-color: white; */
     font-size: 0.9rem;
   }
-  .tulisan2 {
-    padding: 0;
-  }
+
   .tulisan2 p {
-    padding: 50px;
+    /* padding: 30px 20px; */
     font-size: 0.9rem;
     margin: 0;
   }
   .nama2 {
     font-size: 1.5rem;
-    padding: 30px;
+    padding: 30px 0;
   }
   .certi2 {
     font-size: 1.5rem;
-    padding: 30px;
+    padding: 30px 0;
   }
   .judullg {
     font-size: 1.5rem;
-    margin: 30px;
+    margin: 30px 0;
   }
   .jud {
     font-size: 1.5rem;
-    margin: 30px;
+    margin: 30px 0;
   }
   .skill ul {
     flex-direction: column;
+    padding: 20px 0;
   }
   .skill li {
     font-size: 20px;
@@ -114,9 +113,13 @@
 
 @media screen and (max-width: 400px) {
   .pembungkus-card {
-    padding: 0;
+    padding: 150px 0;
   }
   .skill ul {
-    margin: 2%;
+    margin: 0;
+  }
+
+  label {
+    padding: 5px;
   }
 }

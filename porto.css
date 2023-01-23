@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: solid 1px white;
+  /* border: solid 1px white; */
   box-sizing: border-box;
 }
 html {
@@ -202,7 +202,7 @@ main {
   border-right: solid 2px rgba(223, 86, 70, 0.5);
 }
 .tulisan2 p {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 /* certificate */
@@ -227,13 +227,13 @@ main {
   text-align: center;
 }
 .pembungkus-card {
-  padding: 200px;
+  padding: 150px;
 }
 .card p {
   display: inline-block;
   width: 230px;
   font-size: 15px;
-  margin-top: 50px;
+  margin-top: 155px;
   text-align: center;
 }
 .card {
