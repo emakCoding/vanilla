@@ -109,6 +109,9 @@
   .tema {
     width: 250px;
   }
+  .submit {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
