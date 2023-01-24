@@ -47,7 +47,9 @@
 @media screen and (max-width: 800px) {
   .tulisan2 {
     flex-direction: column;
-    padding: 0 50px 50px;
+  }
+  .b {
+    border-right: none;
   }
 
   .pembungkus-card {
@@ -76,7 +78,6 @@
   }
 
   .tulisan2 p {
-    /* padding: 30px 20px; */
     font-size: 0.9rem;
     margin: 0;
   }

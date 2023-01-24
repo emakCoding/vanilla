@@ -8,6 +8,25 @@ const kolomUser = document.querySelector("#user");
 const pic = ["✊", "✋", "✌️"];
 let i = 0;
 
+[batu, kertas, gunting].forEach((elm, idx) => {
+  elm.addEventListener("click", () => {
+    const interval = setInterval(() => {
+      i++;
+      if (i == pic.length) i = 0;
+      pilihanComputer.innerHTML = pic[i];
+      kolomUser.innerHTML = pic[i];
+    }, 500);
+
+    setTimeout(() => {
+      pilihanComputer.innerHTML = pic[idx];
+      kolomUser.innerHTML = pic[idx];
+      clearInterval(interval);
+    }, 10000);
+
+    kolomUser.innerHTML = elm.innerHTML;
+  });
+});
+
 // computer
 function getComputer() {
   const comp = Math.random();
@@ -25,46 +44,14 @@ function getHasil(kolomUser, comp) {
   if (kolomUser == "✊") return comp == "✌️" ? "MENANG!" : "KALAH!";
 }
 
-[batu, kertas, gunting].forEach((elm, idx) => {
-  elm.addEventListener("click", () => {
-    const interval = setInterval(() => {
-      i++;
-      if (i == pic.length) i = 0;
-      kolomUser.innerHTML = pic[i];
-    }, 500);
-
-    setTimeout(() => {
-      kolomUser.innerHTML = pic[idx];
-      clearInterval(interval);
-    }, 6000);
-
-    kolomUser.innerHTML = elm.innerHTML;
-
-    const computer = document.querySelector("#computer");
-    const interval2 = setInterval(() => {
-      i++;
-      if (i == pic.length) i = 0;
-
-      computer.innerHTML = pic[i];
-    }, 500);
-
-    setTimeout(() => {
-      computer.innerHTML = pic[idx];
-      clearInterval(interval2);
-    }, 6000);
-  });
-});
-
-//
-
 gunting.addEventListener("click", function () {
   const pilihanComputer = getComputer();
   const pilihanUser = "✌️";
   const computer = document.querySelector("#computer");
-  computer.innerHTML = pilihanComputer;
+  computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
+  setTimeout(() => alert(`Kamu ${hasil}`), 10000);
   if (hasil == "MENANG!") {
     // document.location.href = "porto.html";
   }
@@ -74,10 +61,10 @@ kertas.addEventListener("click", function () {
   const pilihanComputer = getComputer();
   const pilihanUser = "✋";
   const computer = document.querySelector("#computer");
-  computer.innerHTML = pilihanComputer;
+  computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
+  setTimeout(() => alert(`Kamu ${hasil}`), 10000);
   if (hasil == "MENANG!") {
     // document.location.href = "porto.html";
   }
@@ -87,10 +74,10 @@ batu.addEventListener("click", function () {
   const pilihanComputer = getComputer();
   const pilihanUser = "✊";
   const computer = document.querySelector("#computer");
-  computer.innerHTML = pilihanComputer;
+  computer.innerText = pilihanComputer;
 
   const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
+  setTimeout(() => alert(`Kamu ${hasil}`), 10000);
   if (hasil == "MENANG!") {
     // document.location.href = "porto.html";
   }

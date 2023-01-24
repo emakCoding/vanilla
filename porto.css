@@ -196,13 +196,13 @@ main {
   word-spacing: 2px;
   font-size: 1.1rem;
   text-align: center;
-  padding: 70px;
+  /* padding: 70px; */
 }
 .b {
   border-right: solid 2px rgba(223, 86, 70, 0.5);
 }
 .tulisan2 p {
-  padding: 20px 0;
+  padding: 40px;
 }
 
 /* certificate */
@@ -233,7 +233,7 @@ main {
   display: inline-block;
   width: 230px;
   font-size: 15px;
-  margin-top: 155px;
+  margin-top: 160px;
   text-align: center;
 }
 .card {
