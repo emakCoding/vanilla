@@ -27,71 +27,38 @@ function getHasil(kolomUser, comp) {
 
 [batu, kertas, gunting].forEach((elm, idx) => {
   elm.addEventListener("click", () => {
+    const computer = document.querySelector("#computer");
     const interval = setInterval(() => {
       i++;
       if (i == pic.length) i = 0;
+      computer.innerHTML = pic[i];
       kolomUser.innerHTML = pic[i];
     }, 500);
 
     setTimeout(() => {
-      kolomUser.innerHTML = pic[idx];
       clearInterval(interval);
-    }, 6000);
-
-    kolomUser.innerHTML = elm.innerHTML;
-
-    const computer = document.querySelector("#computer");
-    const interval2 = setInterval(() => {
-      i++;
-      if (i == pic.length) i = 0;
-
-      computer.innerHTML = pic[i];
-    }, 500);
-
-    setTimeout(() => {
-      computer.innerHTML = pic[idx];
-      clearInterval(interval2);
-    }, 6000);
+      computer.innerHTML = "";
+      kolomUser.innerHTML = "";
+      setTimeout(() => {
+        setPilihanUser(pic[idx]);
+      }, 500);
+    }, 5500);
   });
 });
 
 //
 
-gunting.addEventListener("click", function () {
+function setPilihanUser(pilihanUser) {
   const pilihanComputer = getComputer();
-  const pilihanUser = "✌️";
   const computer = document.querySelector("#computer");
   computer.innerHTML = pilihanComputer;
 
+  kolomUser.innerHTML = pilihanUser;
   const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
-  if (hasil == "MENANG!") {
-    // document.location.href = "porto.html";
-  }
-});
-
-kertas.addEventListener("click", function () {
-  const pilihanComputer = getComputer();
-  const pilihanUser = "✋";
-  const computer = document.querySelector("#computer");
-  computer.innerHTML = pilihanComputer;
-
-  const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
-  if (hasil == "MENANG!") {
-    // document.location.href = "porto.html";
-  }
-});
-
-batu.addEventListener("click", function () {
-  const pilihanComputer = getComputer();
-  const pilihanUser = "✊";
-  const computer = document.querySelector("#computer");
-  computer.innerHTML = pilihanComputer;
-
-  const hasil = getHasil(pilihanUser, pilihanComputer);
-  setTimeout(() => alert(`Kamu ${hasil}`), 6005);
-  if (hasil == "MENANG!") {
-    // document.location.href = "porto.html";
-  }
-});
+  setTimeout(() => {
+    alert(`Kamu ${hasil}`);
+    if (hasil == "MENANG!") {
+      document.location.href = "porto.html";
+    }
+  }, 1000);
+}
