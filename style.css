@@ -63,12 +63,20 @@ h1 .judul {
 
 li button {
   font-size: 250%;
-  border: solid 2px #e6e8e6;
-  border-radius: 10px;
-  background-color: rgba(223, 86, 70, 0.3);
+  outline: none;
+  padding: 10px;
+  border: solid 0 #e6e8e6;
+  border-radius: 50%;
+  background-color: rgb(255, 137, 124);
   box-shadow: 0 10px 14px -3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 300ms ease;
 }
 
+li button:hover {
+  background-color: rgb(250, 172, 164);
+  transform: scale(1.1);
+}
 ul {
   list-style-type: none;
   display: flex;
@@ -110,7 +118,7 @@ p {
   width: 100px;
   height: 100px;
   border: solid 4px #e6e8e6;
-  font-size: 350%;
+  font-size: 400%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +129,7 @@ p {
   height: 100px;
   border: solid 4px #e6e8e6;
   border-radius: 20px;
-  font-size: 350%;
+  font-size: 400%;
   display: flex;
   justify-content: center;
   align-items: center;
