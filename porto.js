@@ -48,6 +48,10 @@ function sendMail() {
     email: document.querySelector("#email").value,
     message: document.querySelector("#message").value,
   };
+  const form = document.querySelector("#form");
+  form.addEventListener("submit", (e) => {
+    e.sendMail();
+  });
 
   const serviceID = "service_7tyysrk";
   const templateID = "template_2i52mdm";
@@ -63,3 +67,11 @@ function sendMail() {
     })
     .catch((err) => console.log(err));
 }
+const form = document.querySelector("#form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const submit = document.querySelector(".submit");
+  submit.addEventListener("click", () => {
+    sendMail();
+  });
+});
