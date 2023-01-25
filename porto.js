@@ -41,7 +41,7 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-// email
+// emailJs
 function sendMail() {
   const pesan = {
     name: document.querySelector("#name").value,
