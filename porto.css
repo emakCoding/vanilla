@@ -424,7 +424,13 @@ form {
   color: rgb(245, 245, 245);
   cursor: pointer;
   outline: none;
+  transition: 300ms ease;
 }
+.submit:hover {
+  background-color: rgba(223, 86, 70, 0.5);
+  transform: scale(0.9);
+}
+
 .hear * {
   padding: 3px;
 }

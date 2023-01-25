@@ -70,8 +70,5 @@ function sendMail() {
 const form = document.querySelector("#form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const submit = document.querySelector(".submit");
-  submit.addEventListener("click", () => {
-    sendMail();
-  });
+  sendMail();
 });
