@@ -64,7 +64,8 @@ header {
   display: flex;
   font-size: 1.5rem;
   /* height: 8vw; */
-  color: rgba(223, 86, 70);
+  /* color: #a13339; */
+  color: rgba(223, 86, 70, 0.8);
   margin-top: 30px;
   font-family: "Moon Dance", cursive;
 }
@@ -306,6 +307,7 @@ main {
   justify-content: space-around;
   background-color: rgba(223, 86, 70, 0.5);
   margin: 0 0 50px 0;
+  box-shadow: 20px 10px 14px -3px rgba(0, 0, 0, 0.5);
 }
 .tema {
   width: 300px;
@@ -398,34 +400,39 @@ label {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
-  border-radius: 0 55px 55px 0;
+  border-radius: 0 5px 5px 0;
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(96, 96, 96);
-  border-radius: 0 55px 55px 0;
+  border-radius: 0 5px 5px 0;
 }
 form {
   display: flex;
   width: 90%;
-  /* height: 100vh; */
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 20px;
 }
+
 .submit {
   width: 20%;
-  height: 10%;
-  border-radius: 30px;
+  height: 30px;
+
+  border-radius: 10px;
   border: none;
   background-color: rgba(223, 86, 70, 0.8);
   align-self: center;
-  font-size: 1.3rem;
-  font-family: "Moon Dance", cursive;
-  padding: 0;
+  font-size: medium;
+  /* font-family: "Moon Dance", cursive; */
+  padding: 20px;
   color: rgb(245, 245, 245);
   cursor: pointer;
   outline: none;
   transition: 300ms ease;
+  margin: 30px;
+  margin-top: -10px;
 }
+
 .submit:hover {
   background-color: rgba(223, 86, 70, 0.5);
   transform: scale(0.9);
@@ -449,3 +456,5 @@ footer p {
   margin: 0;
   padding: 0;
 }
+
+/* form baru */
